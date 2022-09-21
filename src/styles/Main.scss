@@ -1,0 +1,51 @@
+.main{
+    display: flex;
+    position: absolute;
+    top: 110px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 30px;
+    row-gap: 40px;
+    padding: 10px 80px;
+
+    &__product{
+        display: flex;
+        width: 300px;
+        aspect-ratio: 1;
+        flex-grow: 1;
+        flex-flow: column;
+        border: 1px solid rgb(182, 177, 177);
+        border-radius: 15px;
+        padding: 10px;
+        transition: box-shadow 0.2s ease;
+
+        &:hover{
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.20);
+            cursor: pointer;
+        }
+
+        &__imcontainer{
+            width: 100%;
+            aspect-ratio: 1.05;
+            overflow: hidden;
+        }
+
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        & span{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
